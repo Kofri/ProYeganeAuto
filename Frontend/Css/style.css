@@ -203,6 +203,46 @@ b{
     }
     /*shope page-----------
     -----------------------*/
+    .buyLevel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .buyLevel .level{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 6px double var(--background-color-button);
+        color: var(--background-color-icon);
+    }
+    .buyLevel .levelIn{        
+        color: var(--content-background-color);
+        background-color: var(--background-color-icon);
+    }
+    .buyLevel .flash{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin: 0 5px;
+    }
+    .buyLevel .flash span{
+        background-color: #005288;
+        height: 4px;
+        width: 15px;
+        border-radius: 10px;
+    }
+    .buyLevel .flash span:nth-child(1){
+        transform: rotate(-45deg) translate(-3px, -3px);
+    }
+    .buyLevel .flash span:nth-child(2){
+        width: 50px;
+    }
+    .buyLevel .flash span:nth-child(3){
+        transform: rotate(45deg) translate(-3px, 3px);
+    }
     /*contact page---------
     -----------------------*/
     .cardContact span{
