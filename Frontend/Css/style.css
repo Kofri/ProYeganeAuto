@@ -14,6 +14,7 @@
     --color-icon:#5d66df;
     --shadow:1px 3px 6px 1px #052d9c5a,
     -1px -3px 6px 1px rgba(63, 226, 255, 0.273);
+    --shadow-btn: 0 3px 5px 1px rgba(0, 0, 0, 0.25);
 }
 body{
     background-color:var(--body-color);
@@ -61,7 +62,7 @@ b{
         color: var(--background-color-button);
         padding: 6px;
         margin: 0 25px;
-        box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: var(--shadow);
         margin-bottom: 5px;
         border-radius: 5px;
     }
@@ -70,7 +71,7 @@ b{
         border: none;
         color: #fff;
         padding: 6px;
-        box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: var(--shadow-btn);
         border-radius: 5px;
         margin: 0 25px;
     }
@@ -93,6 +94,7 @@ b{
         align-items: center;
         justify-content:space-around;
         padding: 4px 0;
+        z-index: 30;
     }
     .navMobile span{
         background-color: var(--background-color-icon);
@@ -238,10 +240,162 @@ b{
         transform: rotate(-45deg) translate(-3px, -3px);
     }
     .buyLevel .flash span:nth-child(2){
-        width: 50px;
+        width: 100%;
     }
     .buyLevel .flash span:nth-child(3){
         transform: rotate(45deg) translate(-3px, 3px);
+    }
+    #productsShop{
+        display: grid;
+        grid-template-columns: 105px auto;
+        grid-template-rows: auto 60px 350px auto;    
+    }
+    #productsShop ul{
+        list-style: none;
+    }
+    #productsShop ul li{
+        border-radius: 10px;
+        padding: 3px 10px;
+        margin: 3px 5px;
+        box-shadow: var(--shadow-btn);
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #productsShop h3{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    #productsShop #navScrollTopShop{
+        grid-row: 2/3;
+        grid-column: 1/3;
+        overflow-x: scroll;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-block: 1px solid rgb(0, 0, 0, 0.3);
+    }
+    #productsShop #navScrollTopShop ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+    }
+    #productsShop #navScrollTopShop ul .btnNavShopP{
+        border: 1px solid var(--background-color-button);
+        background-color: var(--background-color-icon);
+        color:var(--content-background-color);
+    }
+    #productsShop #navScrollTopShop ul .btnNavShopL{
+        border: 1px solid var(--background-color-button);
+        color: var(--background-color-icon);
+    }
+    #productsShop #navScrollNextShop{
+        overflow-y: scroll;
+        scrollbar-color: red;
+        grid-row: 3/4;
+        grid-column: 1/2;
+        margin: 10px 0;
+        border-left: 1px solid rgb(0, 0, 0, 0.3);
+        border-right: 1px solid rgb(0, 0, 0, 0.3);
+    }
+    #productsShop #navScrollNextShop .btnNavShopP{
+        border: 1px solid var(--background-color-button);
+        background-color: var(--background-color-icon);
+        color:var(--content-background-color);
+    }
+    #productsShop #navScrollNextShop .btnNavShopL{
+        border: 1px solid var(--background-color-button);
+        color: var(--background-color-icon);
+    }
+    #productsShop .scrollCards{
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+    }
+    #productsShop .scrollCards .card{
+        display: flex;
+        flex-direction: column;
+        width: 170px;
+        height:auto;
+        position: relative;
+    }
+    #productsShop .scrollCards .card > img{
+        width: 130px;
+        height: 135px;
+        margin-bottom: 10px;
+    }
+    #productsShop .scrollCards .card .rate{
+        display: flex;
+    }
+    #productsShop .scrollCards .card .rate img{
+        width: 20px;
+        height: 20px;
+    }
+    #productsShop .scrollCards .card .numberProduct{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    #productsShop .scrollCards .card .numberProduct span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+    #productsShop .scrollCards .card .numberProduct img{
+        width: 18px;
+        height: 18px;
+    }
+    #productsShop .scrollCards .card .numberProduct .add{
+        border-radius: 0 6px 6px 0;
+    }
+    #productsShop .scrollCards .card .numberProduct .num{
+        border-right: 1px solid rgb(0, 0, 0, 0.3);
+        border-left: 1px solid rgb(0, 0, 0, 0.3);
+        width: 40px;
+    }
+    #productsShop .scrollCards .card .numberProduct .del{
+        border-radius: 6px 0 0 6px;
+    }
+    #productsShop .scrollCards .card .like{
+        height:20px;
+        width: 28px;
+        /* position: absolute; */
+        top: -45px;
+        padding: 7px;
+        border-radius: 0 0 10px 10px;
+        animation: likeMe 2s ease 0s infinite normal none;
+    }
+    @keyframes likeMe {
+        0%{
+            background-color: #a7d0f1;
+            box-shadow: 0 0 5px 0 red;
+        }
+        100%{
+            background-color: #47a3c7;
+            box-shadow: 0 0 10px 5px #00000000;
+        }
+    }
+    #productsShop .scrollCards .card .liked{
+        background-color: #e91341;
+        animation: none;
+    }
+    #productsShop .btnSubBuy{
+        grid-row: 4/5;
+        grid-column: 1/3;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    #productsShop .btnSubBuy .btnSubP{
+        width: 100%;
     }
     /*contact page---------
     -----------------------*/
