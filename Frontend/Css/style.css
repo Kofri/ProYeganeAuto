@@ -710,4 +710,53 @@ b{
         border-right: none;
         cursor: pointer;
     }
+    /*search---------------
+    -----------------------*/
+    .boxSearch{
+        display: flex;
+        width: 90vw;
+    }
+    .boxSearch input{
+        width: 100%;
+        padding: 5px 3px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        outline: none;
+        border-block: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    .boxSearch input:focus{
+        border: 1px solid rgba(0, 0, 0, 0.3);  
+    }
+    #boxesResultSearch .boxResultSearch{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        border-bottom: 4px solid rgb(0, 82, 189);  
+        padding-bottom: 20px;
+    }
+    #boxesResultSearch .boxResultSearch:last-child{
+        margin-bottom: 0;
+        border-bottom: none;  
+        padding-bottom: 0;
+    }
+    #boxesResultSearch .boxResultSearch .leftArea{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        margin-right: 10px;
+    }
+    #boxesResultSearch .boxResultSearch .leftArea div:first-child{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    #boxesResultSearch .boxResultSearch .leftArea div:first-child img{
+        width: 75px;
+        height: 85px;
+    }
+    #boxesResultSearch .boxResultSearch .leftArea .rate{
+        width: 75px;
+    }
+    #boxesResultSearch .boxResultSearch .leftArea .rate img{
+        width: 13px;
+    }
 }
