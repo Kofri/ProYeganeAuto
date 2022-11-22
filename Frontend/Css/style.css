@@ -1,0 +1,384 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: "lalezar";
+}
+:root{
+    --content-border-radius: 5px;
+    --body-color: #f2ffff;
+    --bText-color: #005288;
+    --content-background-color: #fff;
+    --background-color-icon: #3c428f;
+    --background-color-glass:#0c619a3e;
+    --background-color-button: #565ecd;
+    --color-icon:#5d66df;
+    --shadow:1px 3px 6px 1px #052d9c5a,
+    -1px -3px 6px 1px rgba(63, 226, 255, 0.273);
+}
+body{
+    background-color:var(--body-color);
+    padding: 5px 6px 50px 6px;
+}
+body > div{
+    margin-bottom: 11px;
+}
+a{
+    color:inherit;
+}
+.middel{
+    display:flex;
+    align-items:center;
+}
+b{
+ color:var(--bText-color);
+}
+@media (max-width: 450px){
+    .shadow{
+        border-radius: 6px;
+        background-color: var(--content-background-color);
+        box-shadow: var(--shadow);
+    }
+    .padd{
+    padding:10px;
+    }
+    .text p{
+        margin-right: 15px;
+        text-align: justify;
+    }
+    .upClick{
+        border: 1px solid #1c6b7c;
+    }
+    .ulli{
+        list-style: none;
+    }
+    .tab{
+        text-indent: 10px;
+    }
+    .btnSubL{
+        background-color: #f0f8ff;
+        outline: 1px solid var(--background-color-button);
+        border: none;
+        color: var(--background-color-button);
+        padding: 6px;
+        margin: 0 25px;
+        box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+    .btnSubP{
+        background-color: var(--background-color-button);
+        border: none;
+        color: #fff;
+        padding: 6px;
+        box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        margin: 0 25px;
+    }
+    .helpText{
+        margin: 7px 0;
+    }
+    .helpText a{
+        color: var(--background-color-button)
+    }
+    /*nav mobile-----------
+    -----------------------*/
+    .navMobile{
+        position:fixed;
+        width: 100vw;
+        background-color:var(--background-color-glass);
+        backdrop-filter: blur(5px);
+        bottom: 0;
+        right: 0;
+        display:flex;
+        align-items: center;
+        justify-content:space-around;
+        padding: 4px 0;
+    }
+    .navMobile span{
+        background-color: var(--background-color-icon);
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+    }
+    .navMobile img{
+        height: 23px;
+    }
+    /*home page------------
+    -----------------------*/
+    h1{
+        font-size: 1.4em;
+    }
+    .ulli-home{
+        text-indent: 10px;
+    }
+    #addTop{
+        padding: 5px 0;
+        display:flex;
+        align-items: center;
+        justify-content:start;
+        margin-bottom: 10px;
+    }
+    #addTop *{
+        height:30px;
+        margin: 2px 4px;
+    }
+    .imgBanner{
+        width:100%;
+        border-radius: var(--content-border-radius);
+    }
+    #topProduct{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }#topProduct a{
+        height: 25px;
+        width: 25px;
+        background-color:#c0eeee;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    #iconMoreProduct{
+        height: 15px;
+        width: 15px;
+    }
+    .slaidCard{
+        display:flex;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y:hidden;
+        height:200px;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 20px 0;
+    }
+    .card{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        flex: 0 0 140px;
+        height:180px;
+        width:50px;
+        margin: 10px;
+        background-size: cover;
+        scroll-snap-align: start;
+    }
+    .card img{
+        width:100%;
+    }
+    #instresting div{
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+    }
+    #instresting span{
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        border-radius: 50%;
+        margin-left: 5px;
+        background-color: var(--background-color-icon);
+    }
+    #instresting img{
+        height: 20px;
+        width: 20px;
+    }
+    #master .conect{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #master a{
+        display: flex;
+        align-items: center;
+    }
+    #master a img{
+        height: 30px;
+    }
+    /*shope page-----------
+    -----------------------*/
+    /*contact page---------
+    -----------------------*/
+    .cardContact span{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        margin-bottom: 15px;
+    }
+    .cardContact span img{
+        height: 60px;
+        filter: drop-shadow(0 3px 3px rgba(75, 75, 75, 0.39));
+    }
+    .cardContact p{
+        display: flex;
+    }
+    .cardContact div{
+        display: flex;
+        align-items: center;
+        justify-content:end;
+        height: 40px;
+    }
+    .cardContact div div{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .cardContact div img{
+        height: 30px;
+        width: 30px;
+    }
+    .cardContact div p{
+        margin:0 10px;
+    }
+    /*singUp page----------
+    -----------------------*/
+    #signUp{
+        display: flex;
+        flex-direction: column;
+    }
+    #singUpForm div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom:30px;
+    }
+    #singUpForm div label::after{
+        content: '*';
+        color: red;
+    }
+    #singUpForm div input{
+        box-shadow: var(--shadow);
+        border: none;
+        outline: 1px solid rgba(0, 252, 21, 0);
+        margin-top: 5px;
+        height: 2rem;
+        padding: 0px 6px;
+    }
+    #singUpForm div input:focus{
+        outline: 1px solid var(--color-icon);
+        transition: .5s;
+    }
+    #signIn{
+        display: flex;
+        flex-direction: column;
+    }
+    #singInForm div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom:30px;
+    }
+    #singInForm div input{
+        box-shadow: var(--shadow);
+        border: none;
+        outline: 1px solid rgba(0, 252, 21, 0);
+        margin-top: 5px;
+        height: 2rem;
+        padding: 0px 6px;
+    }
+    #singInForm div input:focus{
+        outline: 1px solid var(--color-icon);
+        transition: .5s;
+    }
+    /*profile page----------
+    -----------------------*/
+    #navProfile{
+        display: flex;
+        align-items: center;
+    }
+    #navProfile img{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+    .btnNavProfile{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position:fixed;
+        left: 20px;
+        top: 20px;
+    }
+    .btnNavProfile span{
+        transition: 0.3s;
+        height: 6px;
+        border-radius: 10px;
+        background-color:var(--color-icon);
+    }
+    .btnNavProfile span:nth-child(1){
+        width: 100%;
+    }
+    .btnNavProfile span:nth-child(2){
+        width: 40%;
+    }
+    .btnNavProfile span:nth-child(3){
+        width: 60%;
+    }
+    .btnNavProfile-open{
+        transform-origin: 1px;
+    }
+    .btnNavProfile-open span:nth-child(1){
+        width: 100%;
+        transform: translateY(13px) rotate(-45deg);
+    }
+    .btnNavProfile-open span:nth-child(2){
+        width: 0%;
+    }
+    .btnNavProfile-open span:nth-child(3){
+        width: 100%;
+        transform: translateY(-13px) rotate(45deg);
+    }
+    #introProfile span{
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+    }
+    #introProfile img{
+        width: 85%;
+        border-radius: 20px;
+    }
+    .glassBack{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(60, 66, 144, 0);
+        backdrop-filter: blur(0px);
+    }
+    .glassBack-open{
+        background-color: rgba(60, 66, 144, 0.466);
+        backdrop-filter: blur(5px);
+    }
+    .navFloatingProfile{
+        position: fixed;
+        left: -200px;
+        top: 0;
+        background-color: var(--body-color);
+        width: 180px;
+        height: 100%;
+    }
+    .navFloatingProfile-open{
+        left: 0;
+    }
+    .navFloatingProfile ul{
+        list-style: none;
+        margin-top: 60px;
+    }
+    .navFloatingProfile ul li{
+        color: var(--background-color-button);
+        margin-bottom: 8px;
+        border: 1px solid var(--background-color-icon);
+        border-left: none;
+        border-right: none;
+        cursor: pointer;
+    }
+}

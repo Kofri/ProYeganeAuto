@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/font.css">
+</head>
+<body>
+    <nav class="navMobile">
+        <a href="./index.html"><span><img src="./Icon/home.svg" alt=""></span></a>
+        <a href="./search.html"><span><img src="./Icon/search.svg" alt=""></span></a>
+        <a href="./signUp.html"><span><img src="./Icon/man.svg" alt=""></span></a>
+        <a href="./contact.html"><span><img src="./Icon/contact_to_us.svg" alt=""></span></a>
+        <a href="./shop.html"><span><img src="./Icon/shop.svg" alt=""></span></a>
+    </nav>
+    <p class="helpText">قبلا ثبت نام کردید؟<a href="./signIn.html">ورود</a></p>
+    <div class="shadow padd" id="signUp">
+        <form id="singUpForm">
+            <div>
+                <label for="name" >نام</label>
+                <input type="text"/>
+            </div>
+            <div>
+                <label for="family">نام خانوادگی</label>
+                <input type="text" />
+            </div>
+            <div>
+                <label for="family">نام کاربری</label>
+                <input type="text" />
+            </div>
+            <div>
+                <label for="unicode">کد ملی</label>
+                <input type="number" />
+            </div>
+            <div>
+                <label for="phoneNumber">شماره همراه</label>
+                <input type="number">
+            </div>
+            <div>
+                <label for="user">رمز عبور</label>
+                <input type="password" />
+            </div>
+            <div>
+                <label for="conformationUser">تکرار رمز</label>
+                <input type="password">
+            </div>
+        </form>
+        <button class="btnSubP" onClick="">ثبت نام</button>
+    </div>
+    <script src="./Javascript/signUp.js"></script>
+</body>
+</html>
