@@ -6,23 +6,3 @@
 	font-family: "titr";
 	src: url(../Font/Far_TitrBd.ttf);
 }
-@font-face {
-	font-family: "entezar3";
-	src: url(../Font/Entezar3_v2.0.1.ttf);
-}
-@font-face {
-	font-family: "entezar4";
-	src: url(../Font/Entezar4_v2.0.1.ttf);
-}
-@font-face {
-	font-family: "entezard5";
-	src: url(../Font/EntezarD5_v2.0.1.ttf);
-}
-@font-face {
-	font-family: "entezard6";
-	src: url(../Font/EntezarD6_v2.0.1.ttf);
-}
-@font-face {
-	font-family: "entezard";
-	src: url(../Font/EntezarD_v2.0.1.ttf);
-}
