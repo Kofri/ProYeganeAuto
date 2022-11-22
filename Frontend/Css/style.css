@@ -81,6 +81,9 @@ b{
     .helpText a{
         color: var(--background-color-button)
     }
+    h3{
+        margin-bottom: 15px;
+    }
     /*nav mobile-----------
     -----------------------*/
     .navMobile{
@@ -367,7 +370,7 @@ b{
     #productsShop .scrollCards .card .like{
         height:20px;
         width: 28px;
-        /* position: absolute; */
+        background-color: #47a3c7;
         top: -45px;
         padding: 7px;
         border-radius: 0 0 10px 10px;
@@ -392,10 +395,61 @@ b{
         grid-column: 1/3;
         display: flex;
         justify-content: center;
-        margin: 10px;
+        margin: 0px;
     }
     #productsShop .btnSubBuy .btnSubP{
         width: 100%;
+    }
+    #allProducts .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 20px 15px;
+    }
+    #allProducts .products .product{
+        display: flex;
+    }
+    #allProducts .products .product img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    #allProducts .btnSub{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #allProducts .btnSub .btnSubL{
+        width: 100%;
+    }
+    #registerComments{
+        display: flex;
+        flex-direction: column;
+    }
+    #registerComments textarea{
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    #registerComments textarea:valid{
+        border: 1px solid rgba(0, 0, 0, 0.3);    
+    }
+    #commentsProducts .comment .whoComments{
+        display: flex;
+        align-items: center;
+    }
+    #commentsProducts .comment .whoComments img{
+        width: 50px;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    #commentsProducts .comment p{
+        color: rgb(126, 126, 126);
+        margin-top: 15px;
+    }
+    #commentsProducts hr{
+        margin: 10px 35px;
+        border: 1px solid rgb(145, 171, 255);
     }
     /*contact page---------
     -----------------------*/
