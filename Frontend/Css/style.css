@@ -523,6 +523,15 @@ b{
         width: 12px;
         height: 12px;
     }
+    /*purchase result page-
+    -----------------------*/
+    #successfulPayment{
+        text-align: center;
+    }
+    #successfulPayment img{
+        width:100px;
+        border-radius: 20px;
+    }
     /*contact page---------
     -----------------------*/
     .cardContact span{
