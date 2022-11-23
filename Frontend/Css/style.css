@@ -215,6 +215,42 @@ b{
     #master a img{
         height: 30px;
     }
+    #blogHome a{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        text-decoration: none;
+    }
+    #blogHome a:last-child{
+        margin-bottom: 0;
+    }
+    #blogHome a div{
+        width: 80%;
+    }
+    #blogHome a div img{
+        width: 100%;
+    }
+    /*blog page------------
+    -----------------------*/
+    #blog div{
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    #blog div:last-child{
+        margin-bottom: 0;
+    }
+    #blog img{
+        margin-bottom: 15px;
+        border-radius: 15px;
+    }
+    #getDiscount{
+        margin-bottom: 15px;
+    }
+    #getDiscount input{
+        margin: 20px 0;
+        padding: 3px 5px;
+    }
     /*shope page-----------
     -----------------------*/
     .buyLevel{
@@ -309,6 +345,7 @@ b{
         margin: 10px 0;
         border-left: 1px solid rgb(0, 0, 0, 0.3);
         border-right: 1px solid rgb(0, 0, 0, 0.3);
+        scrollbar-gutter: stable both-edge;
     }
     #productsShop #navScrollNextShop .btnNavShopP{
         border: 1px solid var(--background-color-button);
@@ -635,6 +672,7 @@ b{
         position:absolute;
         left: 20px;
         top: 20px;
+        z-index: 30;
     }
     .btnNavProfile span{
         transition: 0.3s;
@@ -682,6 +720,7 @@ b{
         left: 0;
         background-color: rgba(60, 66, 144, 0);
         backdrop-filter: blur(0px);
+        z-index: 30;
     }
     .glassBack-open{
         background-color: rgba(60, 66, 144, 0.466);
@@ -694,6 +733,7 @@ b{
         background-color: var(--body-color);
         width: 180px;
         height: 100%;
+        z-index: 30;
     }
     .navFloatingProfile-open{
         left: 0;
@@ -712,6 +752,9 @@ b{
     }
     /*search---------------
     -----------------------*/
+    #suggestSearchBox::-webkit-scrollbar{
+        height:10px;
+    }
     .boxSearch{
         display: flex;
         width: 90vw;
@@ -755,8 +798,10 @@ b{
     }
     #boxesResultSearch .boxResultSearch .leftArea .rate{
         width: 75px;
+        text-align: center;
+        margin-top: 5px;
     }
     #boxesResultSearch .boxResultSearch .leftArea .rate img{
-        width: 13px;
+        width: 19px;
     }
 }
