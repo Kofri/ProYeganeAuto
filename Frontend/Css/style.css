@@ -33,7 +33,7 @@ a{
 b{
  color:var(--bText-color);
 }
-@media (max-width: 450px){
+@media (max-width: 426px){
     .shadow{
         border-radius: 6px;
         background-color: var(--content-background-color);
@@ -484,7 +484,7 @@ b{
         margin-left: 10px;
     }
     #commentsProducts .comment p{
-        color: rgb(126, 126, 126);
+        color: #7e7e7e;
         margin-top: 15px;
     }
     #commentsProducts hr{
@@ -720,9 +720,12 @@ b{
         left: 0;
         background-color: rgba(60, 66, 144, 0);
         backdrop-filter: blur(0px);
-        z-index: 30;
+        z-index: -1;
+        transition: 0.5s;
     }
     .glassBack-open{
+        display: flex;
+        z-index: 30;
         background-color: rgba(60, 66, 144, 0.466);
         backdrop-filter: blur(5px);
     }
@@ -734,6 +737,7 @@ b{
         width: 180px;
         height: 100%;
         z-index: 30;
+        transition: 0.5s;
     }
     .navFloatingProfile-open{
         left: 0;
@@ -749,6 +753,105 @@ b{
         border-left: none;
         border-right: none;
         cursor: pointer;
+    }
+    #changeInformation form{
+        display: flex;
+        flex-direction: column;
+    }
+    #changeInformation p{
+        color: #8d8d8d;
+    }
+    #changeInformation div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    #changeInformation div label{
+        margin-bottom: 5px;
+    }
+    #changeInformation div input{
+        padding: 0 6px;
+        box-shadow: var(--shadow);
+        border: none;
+        height:2rem;
+        outline: 1px solid rgba(0, 252, 21, 0);
+    }
+    #buyList {
+        display: flex;
+        flex-direction: column;
+    }
+    #buyList div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid var(--bText-color);
+    }
+    #buyList div:last-child{
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    #buyList div a{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #buyList div .download{
+        background-color: var(--background-color-button);
+    }
+    #buyList div .showFile{
+        border:1px solid var(--background-color-button);
+    }
+    #buyList div a img{
+        width: 20px;
+        height: 20px;
+    }
+    #liked{
+        display: flex;
+        flex-direction: column;
+    }
+    #liked .cardLike{
+        position: relative;
+    }
+    #liked .cardLike:not(:last-child){
+        margin-bottom: 20px;
+    }
+    #liked .cardLike > span{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        background-color: #e91341;
+    }
+    #liked .cardLike > span img{
+        width: 20px;
+        height: 20px;
+    }
+    #liked .cardLike div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:auto;
+    }
+    #liked .cardLike div img{
+        width: 100%;
+        height: 100%;
+    }
+    #liked .cardLike h4{
+        margin: 15px;
+    }
+    #consumed ul{
+        list-style: none;
     }
     /*search---------------
     -----------------------*/
@@ -803,5 +906,53 @@ b{
     }
     #boxesResultSearch .boxResultSearch .leftArea .rate img{
         width: 19px;
+    }
+    /*profile worker-------
+    -----------------------*/
+    .idWorker{
+        display: flex;
+        flex-direction: column;
+    }
+    .idWorker label{
+        margin-bottom:10px;
+    }
+    .idWorker input{
+        margin-bottom:20px;
+        box-shadow: var(--shadow);
+        outline: none;
+        padding: 0 6px;
+        border:none;
+        height: 2rem;
+    }
+    #resulteIDShop > span{
+        display: flex;
+        justify-content: center;
+    }
+    #resulteIDShop > span img{
+        border-radius: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    #resulteIDShop details{
+        margin-top: 10px;
+    }
+    #resulteIDShop summary{
+        font-size: 1.3rem;
+    }
+    #resulteIDShop .table *{
+        outline: 1px solid #005288;
+    }
+    #resulteIDShop .table{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+    #resulteIDShop .table :is(.headerTable,.bodyTable){
+        display:grid;
+        grid-template-columns: 40px auto;
+        grid-template-rows: repeat(2, auto);
+    }
+    #resulteIDShop .table :is(.th, .tb){
+        padding-right: 6px;
     }
 }

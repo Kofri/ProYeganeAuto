@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/font.css">
+</head>
+<body>
+    <nav class="navMobile">
+        <a href="./index.html"><span><img src="./Icon/home.svg" alt=""></span></a>
+        <a href="./search.html"><span><img src="./Icon/search.svg" alt=""></span></a>
+        <a href="./signUp.html"><span><img src="./Icon/man.svg" alt=""></span></a>
+        <a href="./contact.html"><span><img src="./Icon/contact_to_us.svg" alt=""></span></a>
+        <a href="./shop.html"><span><img src="./Icon/shop.svg" alt=""></span></a>
+    </nav>
+    <div class="padd shadow idWorker">
+        <label for="id">شماره فاکتور</label>
+        <input type="text">
+        <div class="btnSubBuy">
+            <button class="btnSubP" onclick="">اعتبارسنجی</button>
+        </div>
+    </div>
+    <div id="resulteIDShop" class="padd shadow">
+        <!-- message1 -->
+        <span><img src="./Icon/unsuccessful.svg" alt=""></span>
+        <span><h2>شماره فاکتور وجود ندارد</h2></span>        
+        <!-- message2 -->
+        <span><img src="./Icon/successful.svg" alt=""></span>     
+        <span><h2>شماره فاکتور وجود دارد</h2></span>        
+        <details open>
+            <summary>محصولات خریداری شده</summary>
+            <div class="table">
+                <div class="headerTable">
+                    <span class="th">تعداد</span>
+                    <span class="th">محصول</span>
+                </div>
+                <div class="bodyTable">
+                    <span class="tb">۱</span>
+                    <span class="tb">روغن اسپیدی سوپر پاور</span>
+                    <span class="tb">۱</span>
+                    <span class="tb">روغن ایرانول پاور</span>
+                </div>
+            </div>
+        </details>
+    </div>
+    <script src="./Javascript/profileWorker.js"></script>
+</body>
+</html>
